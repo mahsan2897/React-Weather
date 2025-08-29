@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right top, #74ebd5, #9face6);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem;
+  color: black;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+input.form-control {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button.btn-primary {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+  min-width: 120px;
+}
+
+button.btn-primary:hover {
+  background-color: #4c76f0;
+}
+
+h1,
+h2,
+h4 {
+  color: black;
+}
+
+/* Responsive typography */
+h1.display-5 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  h1.display-5 {
+    font-size: 3.5rem;
+  }
+}
+
+h1.display-4 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 576px) {
+  h1.display-4 {
+    font-size: 3.75rem;
+  }
+}
+
+.spinner-grow {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Card padding on small screens */
+@media (max-width: 576px) {
+  .card {
+    padding: 1rem;
+  }
+}
+
+/* Responsive search bar */
+.d-flex.flex-column.flex-sm-row {
+  gap: 0.5rem;
+}
+
+@media (max-width: 575.98px) {
+  input.form-control {
+    width: 100%;
+  }
+}
